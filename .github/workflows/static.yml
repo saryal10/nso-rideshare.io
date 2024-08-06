@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Nepali Students to Detroit</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-image: url('your-background-image.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="text-align: center;">
+        <h1 style="margin-bottom: 20px;">Welcome Nepali Students to Detroit</h1>
+        <button style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px;">Request a Ride</button>
+        <button style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px;">Register as a Driver</button>
+    </div>
+    <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: rgba(0, 0, 0, 0.5); color: white;">
+        <p>Copyright © Aryal & Logistics</p>
+    </footer>
+</body>
+</html>
