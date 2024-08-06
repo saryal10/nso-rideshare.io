@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build or compress
+        run: |
+          # Replace with your build or compression commands
+          # For example, if you're using a static site generator:
+          # npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy@v1
+        with:
+          access_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Replace with your build output directory
+          flatten: true
