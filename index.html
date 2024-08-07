@@ -3,32 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to our Airport Pickup Service!</title>
-  <link rel="icon" href="fav.png" type="image/x-icon">  <style>
+  <title>Welcome to Detroit Nepali Students!</title>
+  <link rel="icon" href="fav.png" type="image/x-icon">
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      height: 100vh;
+      min-height: 100vh;
+      background-color: #f5f5f5; /* Light gray background */
     }
 
     .content {
-      flex: 1; /* Takes up all available space */
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      padding: 40px; /* Increased padding for better spacing */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 32px; /* Larger heading for impact */
+      font-weight: bold;
+    }
+
+    .welcome-message {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 18px; /* Clearer message */
+      color: #333;
     }
 
     .info-paragraph {
+      text-align: justify;
+      color: #555; /* Slightly darker text */
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Spacing between button sections */
+    }
+
+    .button-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: #fff;
+      color: #333;
+      border: 2px solid #ddd;
+      padding: 15px 30px;
       text-align: center;
-      color: lightgray;
-      margin-bottom: 20px; /* Adds margin to create space */
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #f0f0f0;
+      color: #333;
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: #333;
       color: white;
       text-align: center;
       padding: 10px;
@@ -37,13 +96,25 @@
 </head>
 <body>
   <div class="content">
-    <h1 style="margin-bottom: 20px;">Welcome to our Airport Pickup Service!</h1>
-    <div class="button-container">
-      <a href="https://airtable.com/apppo8kDdZRqKkYzt/pag9zudyWwbnmSTpm/form" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px;">Request a Ride</a>
-      <a href="https://airtable.com/apppo8kDdZRqKkYzt/pag9il9PE2YAzId7t/form" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px;">Becomme a Driver Partner</a>
-    </div>
+    <h1>Welcome to Detroit Nepali Students!</h1>
+    <p class="welcome-message">Namaste! Landing at Detroit Metropolitan Airport (DTW) and heading to the University of Toledo, OH? We understand the challenges of navigating a new city, especially after a long flight. That's why we are here to help!</p>
     <div class="info-paragraph">
-      <p>Are you a Nepali student arriving at Detroit Metropolitan Airport and heading to the University of Toledo? We understand that navigating a new city, especially after a long flight, can be overwhelming. That's why we've created this platform to connect you with reliable transportation. Our service offers convenient and affordable airport pickups provided by fellow Nepali community members. While we cannot guarantee a pickup for every student due to high demand, we strive to accommodate as many as possible. By utilizing this platform, not only do you ensure a smooth arrival, but you also contribute to supporting the Nepali student community at the University of Toledo. A portion of each fare goes towards funding future events and initiatives organized by the Nepali Student Organization.</p>
+      <p>Since there's no direct public transportation from DTW to Toledo, we offer convenient and affordable airport pickup services provided by fellow Nepali community members.  We also understand settling into a new place can be tough.  To ease your transition, we offer a starter kit with a SIM card to connect you and a temporary accommodation option (up to 30 days) as a paying guest.  Feeling overwhelmed navigating grocery stores? We offer grocery pickup services to introduce you to essential items and simplify your shopping experience.  All these services are provided for a fee, with a portion going towards funding future events and initiatives organized by the Nepali Student Organization at the University of Toledo.  This is a collaborative effort between the Nepali Community of Greater Toledo, and the Nepali Student Organization at the University of Toledo to smoothen your transition as a Nepali international student.</p>
+    </div>
+    <div class="button-container">
+      <div class="button-section new-student">
+        <h3>For New Students</h3>
+        <button class="button">Request a Ride</button>
+        <button class="button">Request a SIM Card</button>
+        <button class="button">Find Accommodation (Up to 30 Days)</button>
+        <button class="button">Request Grocery Pickup</button>
+      </div>
+      <div class="button-section toledo-community">
+        <h3>For Nepali Community in Toledo</h3>
+        <button class="button">Become a Driver Partner</button>
+        <button class="button">Become an Accommodator</button>
+        <button class="button">Become a Grocery Partner</button>
+      </div>
     </div>
   </div>
   <footer>
