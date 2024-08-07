@@ -8,11 +8,12 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: #f5f5f5; /* Light gray background */
+      background-color: #e9ecef; /* Slightly darker gray background */
+      color: #212529; /* Darker text color for better readability */
     }
 
     .content {
@@ -20,27 +21,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px; /* Increased padding for better spacing */
+      padding: 40px;
+      background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       margin-bottom: 20px;
       text-align: center;
-      font-size: 32px; /* Larger heading for impact */
-      font-weight: bold;
+      font-size: 36px; /* Larger heading for more impact */
+      font-weight: 700;
+      color: #007bff; /* Primary color for the heading */
     }
 
     .welcome-message {
       margin-bottom: 30px;
       text-align: center;
-      font-size: 18px; /* Clearer message */
-      color: #333;
+      font-size: 20px; /* Slightly larger font size */
+      color: #495057;
     }
 
     .info-paragraph {
       text-align: justify;
-      color: #555; /* Slightly darker text */
-      line-height: 1.6;
+      color: #6c757d; /* Subtle color for less emphasis */
+      line-height: 1.8;
       margin-bottom: 40px;
     }
 
@@ -48,7 +53,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Spacing between button sections */
+      gap: 20px;
     }
 
     .button-section {
@@ -57,40 +62,44 @@
       align-items: center;
       padding: 20px;
       border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px; /* Set a fixed width for uniformity */
     }
 
     .button-section h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #007bff;
     }
 
     .button {
-      background-color: #fff;
-      color: #333;
-      border: 2px solid #ddd;
-      padding: 15px 30px;
+      background-color: #ffffff;
+      color: #007bff; /* Match button color with heading */
+      border: 2px solid #007bff;
+      padding: 12px 25px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-      margin: 5px;
+      margin: 8px;
       cursor: pointer;
       border-radius: 5px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #f0f0f0;
-      color: #333;
+      background-color: #007bff;
+      color: #ffffff;
     }
 
     footer {
-      background-color: #333;
+      background-color: #007bff;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 1px solid #0056b3; /* Subtle border to separate from content */
     }
   </style>
 </head>
@@ -99,21 +108,21 @@
     <h1>Welcome to Detroit Nepali Students!</h1>
     <p class="welcome-message">Namaste! Landing at Detroit Metropolitan Airport (DTW) and heading to the University of Toledo, OH? We understand the challenges of navigating a new city, especially after a long flight. That's why we are here to help!</p>
     <div class="info-paragraph">
-      <p>Since there's no direct public transportation from DTW to Toledo, we offer convenient and affordable airport pickup services provided by fellow Nepali community members.  We also understand settling into a new place can be tough.  To ease your transition, we offer a starter kit with a SIM card to connect you and a temporary accommodation option (up to 30 days) as a paying guest.  Feeling overwhelmed navigating grocery stores? We offer grocery pickup services to introduce you to essential items and simplify your shopping experience.  All these services are provided for a fee, with a portion going towards funding future events and initiatives organized by the Nepali Student Organization at the University of Toledo.  This is a collaborative effort between the Nepali Community of Greater Toledo, and the Nepali Student Organization at the University of Toledo to smoothen your transition as a Nepali international student.</p>
+      <p>Since there's no direct public transportation from DTW to Toledo, we offer convenient and affordable airport pickup services provided by fellow Nepali community members. We also understand settling into a new place can be tough. To ease your transition, we offer a starter kit with a SIM card to connect you and a temporary accommodation option (up to 30 days) as a paying guest. Feeling overwhelmed navigating grocery stores? We offer grocery pickup services to introduce you to essential items and simplify your shopping experience. All these services are provided for a fee, with a portion going towards funding future events and initiatives organized by the Nepali Student Organization at the University of Toledo. This is a collaborative effort between the Nepali Community of Greater Toledo, and the Nepali Student Organization at the University of Toledo to smoothen your transition as a Nepali international student.</p>
     </div>
     <div class="button-container">
       <div class="button-section new-student">
         <h3>For New Students</h3>
-        <button class="button">Request a Ride</button>
-        <button class="button">Request a SIM Card</button>
-        <button class="button">Find Accommodation (Up to 30 Days)</button>
-        <button class="button">Request Grocery Pickup</button>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagQj9iKjMZKCXm8Z/form">Request a Ride</a>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagXSkLRr1ax2jYIU/form">Request a SIM Card</a>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagEVKaUs4TxMz0u5/form">Find Accommodation (Up to 30 Days)</a>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagUMrxHhRP3U5c5L/form">Request Grocery Pickup</a>
       </div>
       <div class="button-section toledo-community">
-        <h3>For Nepali Community in Toledo</h3>
-        <button class="button">Become a Driver Partner</button>
-        <button class="button">Become an Accommodator</button>
-        <button class="button">Become a Grocery Partner</button>
+        <h3>For Nepali in Toledo</h3>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/paguBfkRJfjdQplVq/form">Become a Driver Partner</a>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagy0I14J8f6Jqp9s/form">Become an Accommodator</a>
+        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagXgDD08vVVL436Y/form">Become a Grocery Shopping Assistant</a>
       </div>
     </div>
   </div>
