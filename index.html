@@ -6,6 +6,8 @@
   <title>Welcome to Detroit Nepali Students!</title>
   <link rel="icon" href="fav.png" type="image/x-icon">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -17,7 +19,7 @@
       background-attachment: fixed;
       background-position: center;
       color: #333;
-      background-blur: 5px;
+      backdrop-filter: blur(5px);
     }
 
     .content {
@@ -38,8 +40,9 @@
       text-align: center;
       font-size: 42px;
       font-weight: 700;
-      color: #0056b3;
+      color: #d32f2f;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      font-family: 'Roboto Slab', serif;
     }
 
     .welcome-message {
@@ -83,68 +86,61 @@
     }
 
     .button-section h3 {
+      margin-bottom: 10px;
       font-size: 24px;
-      margin-bottom: 15px;
-      color: #007bff;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      color: #d32f2f;
+      font-family: 'Roboto Slab', serif;
     }
 
-    .button {
-      background-color: #007bff;
-      color: #ffffff;
-      border: none;
-      padding: 14px 28px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 18px;
-      margin: 10px;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    .button-section p {
       font-size: 16px;
-      border-top: 2px solid #0056b3;
+      color: #666;
+      text-align: center;
     }
 
+    .button-section a {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #d32f2f;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-section a:hover {
+      background-color: #b71c1c;
+    }
   </style>
 </head>
 <body>
   <div class="content">
     <h1>Welcome to Detroit Nepali Students!</h1>
-    <p class="welcome-message">Namaste! Landing at Detroit Metropolitan Airport (DTW) and heading to the University of Toledo, OH? We understand the challenges of navigating a new city, especially after a long flight. That's why we are here to help!</p>
+    <div class="welcome-message">
+      <p>Welcome to our community! We are here to support and connect Nepali students in Detroit.</p>
+    </div>
     <div class="info-paragraph">
-      <p>Since there's no direct public transportation from DTW to Toledo, we offer convenient and affordable airport pickup services provided by fellow Nepali community members. We also understand settling into a new place can be tough. To ease your transition, we offer a starter kit with a SIM card to connect you and a temporary accommodation option (up to 30 days) as a paying guest. Feeling overwhelmed navigating grocery stores? We offer grocery pickup services to introduce you to essential items and simplify your shopping experience. All these services are provided for a fee, with a portion going towards funding future events and initiatives organized by the Nepali Student Organization at the University of Toledo. This is a collaborative effort between the Nepali Community of Greater Toledo, and the Nepali Student Organization at the University of Toledo to smoothen your transition as a Nepali international student.</p>
+      <p>Our mission is to create a welcoming environment for Nepali students in Detroit. We organize various events and activities to help students connect, share experiences, and support each other. Join us to be a part of this vibrant community!</p>
     </div>
     <div class="button-container">
-      <div class="button-section new-student">
-        <h3>For New Students</h3>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagQj9iKjMZKCXm8Z/form">Request a Ride</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagXSkLRr1ax2jYIU/form">Request a SIM Card</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagEVKaUs4TxMz0u5/form">Find Accommodation (Up to 30 Days)</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagUMrxHhRP3U5c5L/form">Request Grocery Pickup</a>
+      <div class="button-section">
+        <h3>Events</h3>
+        <p>Check out our upcoming events and join us for some fun and networking.</p>
+        <a href="#">Learn More</a>
       </div>
-      <div class="button-section toledo-community">
-        <h3>For Nepali in Toledo</h3>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/paguBfkRJfjdQplVq/form">Become a Driver Partner</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagy0I14J8f6Jqp9s/form">Become an Accommodator</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagXgDD08vVVL436Y/form">Become a Grocery Shopping Assistant</a>
+      <div class="button-section">
+        <h3>Resources</h3>
+        <p>Find useful resources to help you navigate life as a student in Detroit.</p>
+        <a href="home.html">Learn More</a>
+      </div>
+      <div class="button-section">
+        <h3>Contact Us</h3>
+        <p>Have questions or need support? Get in touch with us!</p>
+        <a href="#">Learn More</a>
       </div>
     </div>
   </div>
-  <footer>
-    <p>Copyright © Aryal & Logistics</p>
-  </footer>
 </body>
 </html>
