@@ -14,7 +14,7 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: url("path/to/background_image.jpg");
+      background-image: url("path/to/background_image.jpg"); /* Ensure this path is correct */
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -93,24 +93,26 @@
       font-family: 'Roboto Slab', serif;
     }
 
-    .button {
-      background-color: #d32f2f;
-      color: #ffffff;
-      border: none;
-      padding: 14px 28px;
+    .button-section p {
+      font-size: 16px;
+      color: #666;
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 18px;
-      margin: 10px;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-bottom: 15px;
     }
 
-    .button:hover {
+    .button-section a {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #d32f2f;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-section a:hover {
       background-color: #b71c1c;
-      transform: scale(1.05);
     }
 
     footer {
@@ -120,6 +122,7 @@
       padding: 20px;
       font-size: 16px;
       border-top: 2px solid #b71c1c;
+      margin-top: auto;
     }
 
   </style>
@@ -133,11 +136,24 @@
     </div>
     <div class="button-container">
       <div class="button-section">
-        <h3>For New Students</h3>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagQj9iKjMZKCXm8Z/form">Request a Ride</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagXSkLRr1ax2jYIU/form">Request a SIM Card</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagEVKaUs4TxMz0u5/form">Find Accommodation (Up to 30 Days)</a>
-        <a class="button" href="https://airtable.com/appc5zPNqk2NbvIrA/pagUMrxHhRP3U5c5L/form">Request Grocery Pickup</a>
+        <h3>Request a Ride</h3>
+        <p>Need transportation from DTW to Toledo? Request a ride from our community members.</p>
+        <a href="https://airtable.com/appc5zPNqk2NbvIrA/pagQj9iKjMZKCXm8Z/form">Request a Ride</a>
+      </div>
+      <div class="button-section">
+        <h3>Request a SIM Card</h3>
+        <p>Get a starter kit with a SIM card to stay connected as you arrive.</p>
+        <a href="https://airtable.com/appc5zPNqk2NbvIrA/pagXSkLRr1ax2jYIU/form">Request a SIM Card</a>
+      </div>
+      <div class="button-section">
+        <h3>Find Accommodation</h3>
+        <p>Need a place to stay? We offer temporary accommodation options for up to 30 days.</p>
+        <a href="https://airtable.com/appc5zPNqk2NbvIrA/pagEVKaUs4TxMz0u5/form">Find Accommodation (Up to 30 Days)</a>
+      </div>
+      <div class="button-section">
+        <h3>Request Grocery Pickup</h3>
+        <p>Get help with grocery shopping to find essential items for your new home.</p>
+        <a href="https://airtable.com/appc5zPNqk2NbvIrA/pagUMrxHhRP3U5c5L/form">Request Grocery Pickup</a>
       </div>
     </div>
   </div>
